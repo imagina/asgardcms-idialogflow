@@ -1,0 +1,25 @@
+{
+    "name": "nwidart/idialogflow",
+    "description": "",
+    "authors": [
+        {
+            "name": "Nicolas Widart",
+            "email": "n.widart@gmail.com"
+        }
+    ],
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Modules\\Idialogflow\\Providers\\IdialogflowServiceProvider"
+            ],
+            "aliases": {
+                
+            }
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "Modules\\Idialogflow\\": ""
+        }
+    }
+}

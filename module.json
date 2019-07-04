@@ -1,0 +1,16 @@
+{
+    "name": "Idialogflow",
+    "alias": "idialogflow",
+    "description": "",
+    "keywords": [],
+    "active": 1,
+    "order": 0,
+    "providers": [
+        "Modules\\Idialogflow\\Providers\\IdialogflowServiceProvider"
+    ],
+    "aliases": {},
+    "files": [
+        "start.php"
+    ],
+    "requires": []
+}
