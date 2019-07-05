@@ -23,7 +23,7 @@ Method´s Service
 
 End Points Api
 
-Get all intents, add in filter the $projectId
+Get all intents
 ```
 GET: /api/idialogflow/intents
 ```
@@ -38,12 +38,12 @@ Create an Intent
 POST: /api/idialogflow/intents
 ```
 
-Update an Intent
+Update an ntent
 ```
 PUT: /api/idialogflow/intents/:intentId
 ```
 
-Delete an Intent
+Delete an intent
 ```
 DELETE: /api/idialogflow/intents/:intentId
 ```
