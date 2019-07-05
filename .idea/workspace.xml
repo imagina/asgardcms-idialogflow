@@ -1,15 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment=" + Edit README.md">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/apiRoutes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Http/backendRoutes.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Services/IntentService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/Idialogflow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Idialogflow.iml" afterDir="false" />
+    <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/module.json" beforeDir="false" afterPath="$PROJECT_DIR$/module.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,14 +21,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="241">
-              <caret line="31" column="37" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="37" />
+            <state relative-caret-position="696">
+              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
               <folding>
                 <element signature="e#67#112#0#PHP" expanded="true" />
-                <element signature="e#3882#4152#0#PHP" />
-                <element signature="e#4156#4251#0#PHP" />
-                <element signature="e#4941#5276#0#PHP" />
-                <element signature="e#5280#5376#0#PHP" />
               </folding>
             </state>
           </provider>
@@ -44,7 +33,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="764">
+            <state relative-caret-position="1296">
               <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="29" />
               <folding>
                 <element signature="e#60#88#0#PHP" expanded="true" />
@@ -84,9 +73,9 @@
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-1928" />
-    <option name="y" value="-313" />
+    <option name="y" value="-321" />
     <option name="width" value="1936" />
-    <option name="height" value="1040" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -183,6 +172,7 @@
       <workItem from="1562280821007" duration="3214000" />
       <workItem from="1562335029019" duration="189000" />
       <workItem from="1562341208847" duration="6044000" />
+      <workItem from="1562361532029" duration="368000" />
     </task>
     <task id="LOCAL-00001" summary=" + Edit README.md">
       <created>1562259576024</created>
@@ -191,17 +181,59 @@
       <option name="project" value="LOCAL" />
       <updated>1562259576024</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary=" + Edit README.md">
+      <created>1562361551731</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562361551731</updated>
+    </task>
+    <task id="LOCAL-00003" summary=" + Add Api routes for service Intent">
+      <created>1562361585244</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562361585244</updated>
+    </task>
+    <task id="LOCAL-00004" summary=" + Add base service with connection to DialogFlow">
+      <created>1562361621935</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1562361621935</updated>
+    </task>
+    <task id="LOCAL-00005" summary=" + Add RouteServiceProvider in module.json for autoload">
+      <created>1562361666304</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1562361666304</updated>
+    </task>
+    <task id="LOCAL-00006" summary=" + Add Backend Routes base">
+      <created>1562361688184</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1562361688184</updated>
+    </task>
+    <task id="LOCAL-00007" summary=" + Add implementation RouteServiceProvider">
+      <created>1562361721503</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1562361721503</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15103000" />
+    <option name="totallyTimeSpent" value="15471000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-321" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25799572" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -220,7 +252,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.19296375" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.1924307" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -229,7 +261,12 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=" + Edit README.md" />
-    <option name="LAST_COMMIT_MESSAGE" value=" + Edit README.md" />
+    <MESSAGE value=" + Add Api routes for service Intent" />
+    <MESSAGE value=" + Add base service with connection to DialogFlow" />
+    <MESSAGE value=" + Add RouteServiceProvider in module.json for autoload" />
+    <MESSAGE value=" + Add Backend Routes base" />
+    <MESSAGE value=" + Add implementation RouteServiceProvider" />
+    <option name="LAST_COMMIT_MESSAGE" value=" + Add implementation RouteServiceProvider" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/composer.json">
@@ -297,26 +334,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
+    <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="764">
-          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="29" />
+        <state relative-caret-position="696">
+          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding>
-            <element signature="e#60#88#0#PHP" expanded="true" />
+            <element signature="e#67#112#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
+    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="31" column="37" selection-start-line="31" selection-start-column="29" selection-end-line="31" selection-end-column="37" />
+        <state relative-caret-position="1296">
+          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="29" />
           <folding>
-            <element signature="e#67#112#0#PHP" expanded="true" />
-            <element signature="e#3882#4152#0#PHP" />
-            <element signature="e#4156#4251#0#PHP" />
-            <element signature="e#4941#5276#0#PHP" />
-            <element signature="e#5280#5376#0#PHP" />
+            <element signature="e#60#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>
