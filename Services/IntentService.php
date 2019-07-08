@@ -151,10 +151,12 @@ class IntentService
    * @param $intentId
    * @return Response
    */
-  public function createIntent($intent)
+  public function createIntent($request)
   {
     $intentsClient = new IntentsClient();
-    $parent = $intentsClient->projectAgentName($this->projectId);
+    $intent = new Intent();
+    $intent->setDisplayName($request['display_name']);
+    $parent = 'projects/'.$this->projectId.'/agent';
     $intents = $intentsClient->createIntent($parent, $intent);
     // ...
     $intentsClient->close();
