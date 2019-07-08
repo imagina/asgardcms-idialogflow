@@ -156,6 +156,7 @@ class IntentService
     $intentsClient = new IntentsClient();
     $intent = new Intent();
     $intent->setDisplayName($request['display_name']);
+    $intent->setPriority($request['priority']);
     $parent = 'projects/'.$this->projectId.'/agent';
     $intents = $intentsClient->createIntent($parent, $intent);
     // ...
