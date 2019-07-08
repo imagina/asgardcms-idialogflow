@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -17,27 +18,24 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+    <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="696">
-              <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-              <folding>
-                <element signature="e#67#112#0#PHP" expanded="true" />
-              </folding>
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="240">
+                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/.env">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="29" />
-              <folding>
-                <element signature="e#60#88#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="652">
+              <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="99" />
             </state>
           </provider>
         </entry>
@@ -61,13 +59,14 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/Modules/Idialogflow/Services/IntentService.php" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/Providers/RouteServiceProvider.php" />
         <option value="$PROJECT_DIR$/Http/backendRoutes.php" />
         <option value="$PROJECT_DIR$/module.json" />
         <option value="$PROJECT_DIR$/Http/Controllers/Api/IntentController.php" />
         <option value="$PROJECT_DIR$/Http/apiRoutes.php" />
         <option value="$PROJECT_DIR$/Services/IntentService.php" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -89,39 +88,6 @@
             <path>
               <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Credencials" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -172,7 +138,8 @@
       <workItem from="1562280821007" duration="3214000" />
       <workItem from="1562335029019" duration="189000" />
       <workItem from="1562341208847" duration="6044000" />
-      <workItem from="1562361532029" duration="368000" />
+      <workItem from="1562361532029" duration="1232000" />
+      <workItem from="1562593952591" duration="2187000" />
     </task>
     <task id="LOCAL-00001" summary=" + Edit README.md">
       <created>1562259576024</created>
@@ -223,17 +190,31 @@
       <option name="project" value="LOCAL" />
       <updated>1562361721503</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary=" + Add implementation IntentController">
+      <created>1562361929883</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1562361929883</updated>
+    </task>
+    <task id="LOCAL-00009" summary=" + Add .gitignore">
+      <created>1562362023757</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1562362023757</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15471000" />
+    <option name="totallyTimeSpent" value="18522000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-321" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26066098" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11353944" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -245,14 +226,14 @@
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.32998884" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.23076923" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.1924307" />
+      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.19189766" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -266,22 +247,11 @@
     <MESSAGE value=" + Add RouteServiceProvider in module.json for autoload" />
     <MESSAGE value=" + Add Backend Routes base" />
     <MESSAGE value=" + Add implementation RouteServiceProvider" />
-    <option name="LAST_COMMIT_MESSAGE" value=" + Add implementation RouteServiceProvider" />
+    <MESSAGE value=" + Add implementation IntentController" />
+    <MESSAGE value=" + Add .gitignore" />
+    <option name="LAST_COMMIT_MESSAGE" value=" + Add .gitignore" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="666">
-            <caret line="40" column="10" lean-forward="true" selection-start-line="40" selection-start-column="10" selection-end-line="40" selection-end-column="10" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Http/backendRoutes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -334,9 +304,22 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="29" />
+          <folding>
+            <element signature="e#60#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="696">
+        <state relative-caret-position="-4">
           <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
           <folding>
             <element signature="e#67#112#0#PHP" expanded="true" />
@@ -344,13 +327,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="29" />
-          <folding>
-            <element signature="e#60#88#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="24">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="240">
+            <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
