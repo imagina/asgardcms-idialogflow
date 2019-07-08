@@ -58,20 +58,14 @@ class IntentController extends BaseApiController
   public function store(Request $request)
   {
     try {
-      $data = $request->input('attributes') ?? [];//Get data
-      //Validate Request
-      //$this->validateRequestApi(new CategoryRequest($data));
-      //Create item
+      $data = $request->input('attributes') ?? [];
       $intent = $this->intentService->createIntent($data);
-      //Response
       $response = ["data" => $intent];
     } catch (\Exception $e) {
       $status = $this->getStatusError($e->getCode());
       $response = ["errors" => $e->getMessage()];
     }
-    //Return response
     return response()->json($response ?? ["data" => "Request successful"], $status ?? 200);
-
   }
 
   /**
@@ -81,7 +75,15 @@ class IntentController extends BaseApiController
    */
   public function update($intentId, Request $request)
   {
-
+    try {
+      $data = $request->input('attributes') ?? [];//Get data
+      $intent = $this->intentService->updateIntent($intentId, $data);
+      $response = ["data" => $intent];
+    } catch (\Exception $e) {
+      $status = $this->getStatusError($e->getCode());
+      $response = ["errors" => $e->getMessage()];
+    }
+    return response()->json($response, $status ?? 200);
   }
 
   /**
@@ -90,6 +92,13 @@ class IntentController extends BaseApiController
    */
   public function destroy($intentId)
   {
-
+    try {
+      $this->intentService->DeleteIntent($intentId);
+      $response = ['data' => ''];
+    } catch (\Exception $e) {
+      $status = $this->getStatusError($e->getCode());
+      $response = ["errors" => $e->getMessage()];
+    }
+      return response()->json($response, $status ?? 200);
   }
 }

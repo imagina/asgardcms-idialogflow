@@ -3,7 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/Controllers/Api/IntentController.php" beforeDir="false" afterPath="$PROJECT_DIR$/Http/Controllers/Api/IntentController.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,22 +20,69 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/README.md">
-          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-            <state split_layout="SPLIT">
-              <first_editor relative-caret-position="240">
-                <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-              </first_editor>
-              <second_editor />
+        <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+              <folding>
+                <element signature="e#60#88#0#PHP" expanded="true" />
+                <element signature="e#345#453#0#PHP" />
+                <element signature="e#530#964#0#PHP" />
+                <element signature="e#1033#1409#0#PHP" />
+                <element signature="e#1525#2242#0#PHP" />
+                <element signature="e#2236#2480#0#PHP" />
+                <element signature="e#2567#2670#0#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="428">
+              <caret line="172" column="30" selection-start-line="172" selection-start-column="18" selection-end-line="172" selection-end-column="30" />
+              <caret line="187" column="30" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="30" />
+              <folding>
+                <element signature="e#67#112#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Http/apiRoutes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="true" current-in-tab="false">
-        <entry file="remoteDeploymentFS://&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/.env">
+        <entry file="remoteDeploymentFS://&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/vendor/google/cloud-dialogflow/src/V2/Gapic/IntentsGapicClient.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="652">
-              <caret line="39" selection-start-line="39" selection-end-line="39" selection-end-column="99" />
+            <state relative-caret-position="334">
+              <caret line="694" column="43" selection-start-line="694" selection-start-column="33" selection-end-line="694" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/vendor/google/cloud-dialogflow/src/V2/DeleteIntentRequest.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1008" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="true" current-in-tab="false">
+        <entry file="remoteDeploymentFS://&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/vendor/google/cloud-dialogflow/src/V2/Intent.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="289" column="34" selection-start-line="289" selection-start-column="20" selection-end-line="289" selection-end-column="34" />
+              <folding>
+                <element signature="e#155#192#0#PHP" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -45,6 +92,15 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>rout</find>
+      <find>setI</find>
+      <find>setParent</find>
+      <find>setIntent</find>
+      <find>create</find>
+      <find>GPBUtil</find>
+      <find>checkMessage</find>
+      <find>set</find>
+      <find>setDis</find>
+      <find>deleteIntent</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -62,11 +118,13 @@
         <option value="$PROJECT_DIR$/Providers/RouteServiceProvider.php" />
         <option value="$PROJECT_DIR$/Http/backendRoutes.php" />
         <option value="$PROJECT_DIR$/module.json" />
-        <option value="$PROJECT_DIR$/Http/Controllers/Api/IntentController.php" />
-        <option value="$PROJECT_DIR$/Http/apiRoutes.php" />
-        <option value="$PROJECT_DIR$/Services/IntentService.php" />
         <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/vendor/google/cloud-dialogflow/src/V2/Gapic/IntentsGapicClient.php" />
+        <option value="&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/vendor/google/cloud-dialogflow/src/V2/CreateIntentRequest.php" />
+        <option value="$PROJECT_DIR$/Services/IntentService.php" />
+        <option value="$PROJECT_DIR$/Http/apiRoutes.php" />
+        <option value="$PROJECT_DIR$/Http/Controllers/Api/IntentController.php" />
       </list>
     </option>
   </component>
@@ -88,6 +146,40 @@
             <path>
               <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Database" type="462c0819:PsiDirectoryNode" />
+              <item name="Seeders" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Services" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -139,7 +231,7 @@
       <workItem from="1562335029019" duration="189000" />
       <workItem from="1562341208847" duration="6044000" />
       <workItem from="1562361532029" duration="1232000" />
-      <workItem from="1562593952591" duration="2187000" />
+      <workItem from="1562593952591" duration="15277000" />
     </task>
     <task id="LOCAL-00001" summary=" + Edit README.md">
       <created>1562259576024</created>
@@ -204,17 +296,45 @@
       <option name="project" value="LOCAL" />
       <updated>1562362023757</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary=" + Edit Readme">
+      <created>1562597887372</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1562597887372</updated>
+    </task>
+    <task id="LOCAL-00011" summary=" + Edit Intent Service">
+      <created>1562626420755</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1562626420756</updated>
+    </task>
+    <task id="LOCAL-00012" summary=" + Add routes put and delete">
+      <created>1562626449591</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1562626449591</updated>
+    </task>
+    <task id="LOCAL-00013" summary=" + Add implement for store Intent">
+      <created>1562626481474</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1562626481474</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18522000" />
+    <option name="totallyTimeSpent" value="31612000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-321" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.11353944" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.11353944" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -233,7 +353,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.19189766" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.19189766" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -249,7 +369,11 @@
     <MESSAGE value=" + Add implementation RouteServiceProvider" />
     <MESSAGE value=" + Add implementation IntentController" />
     <MESSAGE value=" + Add .gitignore" />
-    <option name="LAST_COMMIT_MESSAGE" value=" + Add .gitignore" />
+    <MESSAGE value=" + Edit Readme" />
+    <MESSAGE value=" + Edit Intent Service" />
+    <MESSAGE value=" + Add routes put and delete" />
+    <MESSAGE value=" + Add implement for store Intent" />
+    <option name="LAST_COMMIT_MESSAGE" value=" + Add implement for store Intent" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Http/backendRoutes.php">
@@ -283,20 +407,6 @@
     <entry file="file://$USER_HOME$/Downloads/Convert Rankine and Kelvin.json">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Credencials/credencials.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="47" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Http/apiRoutes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="264">
@@ -304,28 +414,8 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="492">
-          <caret line="54" column="3" selection-start-line="54" selection-start-column="3" selection-end-line="54" selection-end-column="29" />
-          <folding>
-            <element signature="e#60#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4">
-          <caret line="29" column="21" selection-start-line="29" selection-start-column="21" selection-end-line="29" selection-end-column="21" />
-          <folding>
-            <element signature="e#67#112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
@@ -341,6 +431,47 @@
             <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credencials/credencials.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/apiRoutes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="41" lean-forward="true" selection-start-line="12" selection-start-column="41" selection-end-line="12" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="428">
+          <caret line="172" column="30" selection-start-line="172" selection-start-column="18" selection-end-line="172" selection-end-column="30" />
+          <caret line="187" column="30" selection-start-line="187" selection-start-column="18" selection-end-line="187" selection-end-column="30" />
+          <folding>
+            <element signature="e#67#112#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="74" column="5" lean-forward="true" selection-start-line="74" selection-start-column="5" selection-end-line="74" selection-end-column="5" />
+          <folding>
+            <element signature="e#60#88#0#PHP" expanded="true" />
+            <element signature="e#345#453#0#PHP" />
+            <element signature="e#530#964#0#PHP" />
+            <element signature="e#1033#1409#0#PHP" />
+            <element signature="e#1525#2242#0#PHP" />
+            <element signature="e#2236#2480#0#PHP" />
+            <element signature="e#2567#2670#0#PHP" />
+          </folding>
         </state>
       </provider>
     </entry>
