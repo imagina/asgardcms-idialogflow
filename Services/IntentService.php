@@ -174,7 +174,7 @@ class IntentService
   {
     $intentsClient = new IntentsClient();
     $intents = $intentsClient->updateIntent($intent, $languageCode);
-    // ...
+
     $intentsClient->close();
     $response = [];
     return $response;
@@ -189,7 +189,7 @@ class IntentService
   {
     $intentsClient = new IntentsClient();
     $intents = $intentsClient->deleteIntent($intentId);
-    // ...
+
     $intentsClient->close();
     $response = [];
     return $response;
