@@ -57,6 +57,20 @@ class IntentController extends BaseApiController
    */
   public function store(Request $request)
   {
+    try {
+      $data = $request->input('attributes') ?? [];//Get data
+      //Validate Request
+      //$this->validateRequestApi(new CategoryRequest($data));
+      //Create item
+      $intent = $this->intentService->createIntent($data);
+      //Response
+      $response = ["data" => $intent];
+    } catch (\Exception $e) {
+      $status = $this->getStatusError($e->getCode());
+      $response = ["errors" => $e->getMessage()];
+    }
+    //Return response
+    return response()->json($response ?? ["data" => "Request successful"], $status ?? 200);
 
   }
 
