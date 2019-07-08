@@ -16,13 +16,13 @@ $router->group(['prefix' => '/idialogflow'], function (Router $router) {
       'as' => 'api.idialogflow.intents.show',
       'uses' => 'IntentController@show',
     ]);
-    /*$router->put('/{intentId}', [
+    $router->put('/{intentId}', [
       'as' => 'api.idialogflow.intents.update',
       'uses' => 'IntentController@update',
     ]);
     $router->delete('/{intentId}', [
       'as' => 'api.idialogflow.intents.destroy',
       'uses' => 'IntentController@destroy',
-    ]); */
+    ]);
   });
 });
