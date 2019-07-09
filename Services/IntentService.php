@@ -188,9 +188,10 @@ class IntentService
    */
   public function DeleteIntent($intentId)
   {
+    $parent = 'projects/'.$this->projectId.'/agent/intents/'.$intentId;
     $intentsClient = new IntentsClient();
-    $intents = $intentsClient->deleteIntent($intentId);
-
+    $intentData = $intentsClient->getIntent($parent);
+    $intents = $intentsClient->deleteIntent($intentData->getName());
     $intentsClient->close();
     $response = [];
     return $response;
