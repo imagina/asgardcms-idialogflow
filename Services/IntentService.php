@@ -9,6 +9,8 @@ use Google\Cloud\Dialogflow\V2\Intent\TrainingPhrase\Part;
 use Google\Cloud\Dialogflow\V2\Intent\TrainingPhrase;
 use Google\Cloud\Dialogflow\V2\Intent\Message;
 use Google\Cloud\Dialogflow\V2\Intent\Message\Text;
+use Google\Protobuf\Internal\RepeatedField;
+use Google\Cloud\Dialogflow\V2\IntentView;
 
 class IntentService
 {
@@ -34,7 +36,9 @@ class IntentService
     // get intents List
     $intentsClient = new IntentsClient();
     $parent = $intentsClient->projectAgentName($this->projectId);
-    $intents = $intentsClient->listIntents($parent);
+    $intents = $intentsClient->listIntents($parent, [
+      'intentView' => IntentView::INTENT_VIEW_FULL
+    ]);
     $response = [];
     foreach ($intents->iterateAllElements() as $intent) {
       $intentData = [];
@@ -48,6 +52,21 @@ class IntentService
       $intentData['rootFollowupIntentName'] = $intent->getRootFollowupIntentName();
       $intentData['parentFollowupIntentName'] = $intent->getParentFollowupIntentName();
       $intentData['resetContexts'] = $intent->getResetContexts();
+
+      // Training phrases
+      foreach ($intent->getTrainingPhrases() as $trainingPhrase) {
+        $trainingPhrasetData = [];
+        $trainingPhrasetData[] = json_decode($trainingPhrase->serializeToJsonString());
+        $intentData['trainingPhrases'] = $trainingPhrasetData;
+      }
+
+      // Messages
+      foreach ($intent->getMessages() as $message) {
+        $messagesData = [];
+        $messagesData[] = json_decode($message->serializeToJsonString());
+        $intentData['messages'] = $messagesData;
+      }
+
       $response[] = $intentData;
     }
     $intentsClient->close();
@@ -63,7 +82,9 @@ class IntentService
   {
     $intent = 'projects/'.$this->projectId.'/agent/intents/'.$intentId;
     $intentsClient = new IntentsClient();
-    $intent = $intentsClient->getIntent($intent);
+    $intent = $intentsClient->getIntent($intent, [
+      'intentView' => IntentView::INTENT_VIEW_FULL
+    ]);
     $response['name'] = $intent->getName();
     $response['displayName'] = $intent->getDisplayName();
     $response['WebhookState'] = $intent->getWebhookState();
@@ -75,71 +96,18 @@ class IntentService
     $response['parentFollowupIntentName'] = $intent->getParentFollowupIntentName();
     $response['resetContexts'] = $intent->getResetContexts();
 
-    // Parameters
-    foreach ($intent->getParameters() as $parameters) {
-      $parameterData = [];
-      $parameterData['name'] = $parameters->getName();
-      $parameterData['required'] = $parameters->getMandatory();
-      $parameterData['displayName'] = $parameters->getDisplayName();
-      $parameterData['value'] = $parameters->getValue();
-      $parameterData['is_list'] = $parameters->getIslist();
-
-      // Prompts
-      foreach ($parameters->getPrompts() as $prompt) {
-        $promptData = [];
-        $promptData[] = $prompt;
-        $parameterData['prompts'] = $promptData;
-      }
-      $response['parameters'] = $parameterData;
-    }
-
-    // Events
-    foreach ($intent->getEvents() as $event) {
-      $eventData = [];
-      $eventData[] = $event;
-      $response['events'] = $eventData;
-    }
-
-    // Input Context Names
-    foreach ($intent->getInputContextNames() as $inputContext) {
-      $InputContextData = [];
-      $InputContextData[] = $inputContext;
-      $response['inputContexts'] = $InputContextData;
-    }
-
-    // Output Contexts
-    foreach ($intent->getOutputContexts() as $outContext) {
-      $OutputContexttData = [];
-      $OutputContexttData[] = $outContext->getName();
-      $response['outputContexts'] = $OutputContexttData;
-    }
-
     // Training phrases
     foreach ($intent->getTrainingPhrases() as $trainingPhrase) {
       $trainingPhrasetData = [];
-      $trainingPhrasetData[] = $trainingPhrase;
+      $trainingPhrasetData[] = json_decode($trainingPhrase->serializeToJsonString());
       $response['trainingPhrases'] = $trainingPhrasetData;
-    }
-
-    // Default Response Platform
-    foreach ($intent->getDefaultResponsePlatforms() as $defaultResponsePlatform ){
-      $ResponsePlatformData = [];
-      $ResponsePlatformData[] = $defaultResponsePlatform;
-      $response['defaultResponsePlatform'] = $ResponsePlatformData;
     }
 
     // Messages
     foreach ($intent->getMessages() as $message) {
       $messagesData = [];
-      $messagesData[] = $message;
-      $intentData['messages'] = $messagesData;
-    }
-
-    // Messages
-    foreach ($intent->getFollowupIntentInfo() as $followupIntentInfo) {
-      $followupIntentInfoData = [];
-      $followupIntentInfoData[] = $followupIntentInfo;
-      $response['followupIntentInfo'] = $followupIntentInfoData;
+      $messagesData[] = json_decode($message->serializeToJsonString());
+      $response['messages'] = $messagesData;
     }
 
     $intentsClient->close();
@@ -155,8 +123,20 @@ class IntentService
   {
     $intentsClient = new IntentsClient();
     $intent = new Intent();
-    $intent->setDisplayName($request['display_name']);
-    $intent->setPriority($request['priority']);
+
+    // Name
+    if (isset($request['display_name'])){
+      $intent->setDisplayName($request['display_name']);
+    }
+
+    //dd(is_array($request['training_phrases']));
+    // Training Phrases
+    if (isset($request['training_phrases'])){
+      $intent->setTrainingPhrases($request['training_phrases']);
+    }
+
+    // Responses Or Messages
+
     $parent = 'projects/'.$this->projectId.'/agent';
     $intents = $intentsClient->createIntent($parent, $intent);
     // ...
