@@ -11,6 +11,10 @@ use Google\Cloud\Dialogflow\V2\Intent\Message;
 use Google\Cloud\Dialogflow\V2\Intent\Message\Text;
 use Google\Protobuf\Internal\RepeatedField;
 use Google\Cloud\Dialogflow\V2\IntentView;
+use Google\Cloud\Dialogflow\V2\Intent_TrainingPhrase_Part;
+use Google\Cloud\Dialogflow\V2\Intent_TrainingPhrase;
+use Google\Cloud\Dialogflow\V2\Intent_Message_Text;
+use Google\Cloud\Dialogflow\V2\Intent_Message;
 
 class IntentService
 {
@@ -40,6 +44,7 @@ class IntentService
       'intentView' => IntentView::INTENT_VIEW_FULL
     ]);
     $response = [];
+
     foreach ($intents->iterateAllElements() as $intent) {
       $intentData = [];
       $intentData['name'] = $intent->getName();
@@ -55,9 +60,9 @@ class IntentService
 
       // Training phrases
       foreach ($intent->getTrainingPhrases() as $trainingPhrase) {
-        $trainingPhrasetData = [];
-        $trainingPhrasetData[] = json_decode($trainingPhrase->serializeToJsonString());
-        $intentData['trainingPhrases'] = $trainingPhrasetData;
+        foreach ($trainingPhrase->getParts() as $trainingPhrasePart){
+          $intentData['trainingPhrases'][] = $trainingPhraseData[]= json_decode($trainingPhrasePart->serializeToJsonString());
+        }
       }
 
       // Messages
@@ -85,6 +90,7 @@ class IntentService
     $intent = $intentsClient->getIntent($intent, [
       'intentView' => IntentView::INTENT_VIEW_FULL
     ]);
+    //dd($intent);
     $response['name'] = $intent->getName();
     $response['displayName'] = $intent->getDisplayName();
     $response['WebhookState'] = $intent->getWebhookState();
@@ -96,11 +102,12 @@ class IntentService
     $response['parentFollowupIntentName'] = $intent->getParentFollowupIntentName();
     $response['resetContexts'] = $intent->getResetContexts();
 
+
     // Training phrases
     foreach ($intent->getTrainingPhrases() as $trainingPhrase) {
-      $trainingPhrasetData = [];
-      $trainingPhrasetData[] = json_decode($trainingPhrase->serializeToJsonString());
-      $response['trainingPhrases'] = $trainingPhrasetData;
+      foreach ($trainingPhrase->getParts() as $trainingPhrasePart){
+        $response['trainingPhrases'][] = json_decode($trainingPhrasePart->serializeToJsonString());
+      }
     }
 
     // Messages
@@ -119,30 +126,53 @@ class IntentService
    * @param $intentId
    * @return Response
    */
-  public function createIntent($request)
+  public function createIntent($data)
   {
+
     $intentsClient = new IntentsClient();
+
+    // prepare parent
+    $parent = $intentsClient->projectAgentName($this->projectId);
+
+    // prepare training phrases for intent
+    if(isset($data['trainingPhraseParts'])){
+      $trainingPhrases = [];
+      foreach ($data['trainingPhraseParts'] as $trainingPhrasePart) {
+        $part = new Intent_TrainingPhrase_Part;
+        $part->setText($trainingPhrasePart);
+
+        // create new training phrase for each provided part
+        $trainingPhrase = new Intent_TrainingPhrase();
+        $trainingPhrase->setParts([$part]);
+        $trainingPhrases[] = $trainingPhrase;
+      }
+    }
+
+    // prepare messages for intent
+    if (isset($data['messageTexts'])){
+      $text = new Intent_Message_Text();
+      $text->setText($data['messageTexts']);
+      $message = new Intent_Message();
+      $message->setText($text);
+    }
+
+    // prepare intent
     $intent = new Intent();
-
-    // Name
-    if (isset($request['display_name'])){
-      $intent->setDisplayName($request['display_name']);
+    $intent->setDisplayName($data['displayName']);
+    if(isset($data['trainingPhraseParts'])){
+      $intent->setTrainingPhrases($trainingPhrases);
+    }
+    if (isset($data['messageTexts'])){
+      $intent->setMessages([$message]);
     }
 
-    //dd(is_array($request['training_phrases']));
-    // Training Phrases
-    if (isset($request['training_phrases'])){
-      $intent->setTrainingPhrases($request['training_phrases']);
-    }
+    // create intent
+    $response = $intentsClient->createIntent($parent, $intent);
 
-    // Responses Or Messages
-
-    $parent = 'projects/'.$this->projectId.'/agent';
-    $intents = $intentsClient->createIntent($parent, $intent);
-    // ...
     $intentsClient->close();
-    $response = [];
+
     return $response;
+
   }
 
   /**
@@ -151,14 +181,64 @@ class IntentService
    * @param $languageCode
    * @return Response
    */
-  public function updateIntent($intent, $languageCode)
+  public function updateIntent($intentId, $data)
   {
     $intentsClient = new IntentsClient();
-    $intents = $intentsClient->updateIntent($intent, $languageCode);
+    try {
 
-    $intentsClient->close();
-    $response = [];
-    return $response;
+      $intent = 'projects/'.$this->projectId.'/agent/intents/'.$intentId;
+      $intent = $intentsClient->getIntent($intent, [
+        'intentView' => IntentView::INTENT_VIEW_FULL
+      ]);
+
+      // prepare training phrases for intent
+      if(isset($data['trainingPhraseParts'])){
+        $trainingPhrases = [];
+        foreach ($data['trainingPhraseParts'] as $trainingPhrasePart) {
+          $part = new Intent_TrainingPhrase_Part;
+          $part->setText($trainingPhrasePart);
+
+          // create new training phrase for each provided part
+          $trainingPhrase = new Intent_TrainingPhrase();
+          $trainingPhrase->setParts([$part]);
+          $trainingPhrases[] = $trainingPhrase;
+        }
+      }
+
+      // prepare messages for intent
+      if (isset($data['messageTexts'])){
+        $text = new Intent_Message_Text();
+        $text->setText($data['messageTexts']);
+        $message = new Intent_Message();
+        $message->setText($text);
+      }
+
+      if(isset($data['displayName'])){
+        $intent->setDisplayName($data['displayName']);
+      }
+      if(isset($data['trainingPhraseParts'])){
+        $intent->setTrainingPhrases($trainingPhrases);
+      }
+      if (isset($data['messageTexts'])){
+        $intent->setMessages([$message]);
+      }
+
+      // training pharess
+      if (isset($data['trainingPhrases']) && false){
+
+      }
+
+      // Responses
+      if (isset($data['messages']) && false){
+
+      }
+
+      $languageCode = '';
+      $response = $intentsClient->updateIntent($intent, $languageCode);
+    } finally {
+      $intentsClient->close();
+    }
+    return $intent;
   }
 
   /**
