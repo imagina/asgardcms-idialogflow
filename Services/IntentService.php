@@ -98,7 +98,7 @@ class IntentService
     // Messages
     foreach ($intent->getMessages() as $message) {
       $messagesData = [];
-      $messagesData[] = json_decode($message->serializeToJsonString())->text->text[0];
+      $messagesData = json_decode($message->serializeToJsonString())->text->text;
       $response['messageTexts'] = $messagesData;
     }
 
