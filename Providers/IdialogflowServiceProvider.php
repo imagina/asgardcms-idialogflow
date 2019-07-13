@@ -35,7 +35,7 @@ class IdialogflowServiceProvider extends ServiceProvider
      */
     public function register()
     {
-        //
+      $this->registerBindings();
     }
 
     /**
@@ -109,4 +109,18 @@ class IdialogflowServiceProvider extends ServiceProvider
     {
         return [];
     }
+
+  private function registerBindings()
+  {
+    $this->app->bind(
+      'Modules\Idialogflow\Repositories\BotRepository',
+      function () {
+        $repository = new \Modules\Idialogflow\Repositories\Eloquent\EloquentBotRepository(new \Modules\Idialogflow\Entities\Bot());
+        if (!config('app.cache')) {
+          return $repository;
+        }
+        return new \Modules\Idialogflow\Repositories\Cache\CacheCartDecorator($repository);
+      }
+    );
+  }
 }
