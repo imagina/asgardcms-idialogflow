@@ -3,6 +3,7 @@
 use Illuminate\Routing\Router;
 
 $router->group(['prefix' => '/idialogflow'], function (Router $router) {
+  // Intents
   $router->group(['prefix' => '/intents'], function (Router $router) {
     $router->post('/', [
       'as' => 'api.idialogflow.intents.store',
@@ -25,4 +26,29 @@ $router->group(['prefix' => '/idialogflow'], function (Router $router) {
       'uses' => 'IntentController@destroy',
     ]);
   });
+
+  // Bots
+  $router->group(['prefix' => '/bots'], function (Router $router) {
+    $router->post('/', [
+      'as' => 'api.idialogflow.bots.store',
+      'uses' => 'BotController@store',
+    ]);
+    $router->get('/', [
+      'as' => 'api.idialogflow.bots.index',
+      'uses' => 'BotController@index',
+    ]);
+    $router->get('/{bot}', [
+      'as' => 'api.idialogflow.bots.show',
+      'uses' => 'BotController@show',
+    ]);
+    $router->put('/{bot}', [
+      'as' => 'api.idialogflow.bots.update',
+      'uses' => 'BotController@update',
+    ]);
+    $router->delete('/{bot}', [
+      'as' => 'api.idialogflow.bots.destroy',
+      'uses' => 'BotController@destroy',
+    ]);
+  });
+
 });
