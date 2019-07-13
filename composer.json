@@ -1,10 +1,10 @@
 {
-    "name": "nwidart/idialogflow",
+    "name": "imagina/idialogflow-module",
     "description": "",
     "authors": [
         {
-            "name": "Nicolas Widart",
-            "email": "n.widart@gmail.com"
+            "name": "Imagina Colombia",
+            "email": "soporte@imaginacolombia.com"
         }
     ],
     "extra": {
@@ -13,7 +13,7 @@
                 "Modules\\Idialogflow\\Providers\\IdialogflowServiceProvider"
             ],
             "aliases": {
-                
+
             }
         }
     },
