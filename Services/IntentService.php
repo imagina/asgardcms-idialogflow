@@ -16,20 +16,10 @@ use Google\Cloud\Dialogflow\V2\Intent_TrainingPhrase;
 use Google\Cloud\Dialogflow\V2\Intent_Message_Text;
 use Google\Cloud\Dialogflow\V2\Intent_Message;
 use Google\Cloud\Dialogflow\V2\SessionsClient;
+use Modules\Idialogflow\Entities\Bot;
 
 class IntentService
 {
-
-  // ProjectId get from credentials (google api cloud for dialog flow)
-  private $projectId;
-
-  public function __construct()
-  {
-    // Init projectId
-    $file = file_get_contents(env('GOOGLE_APPLICATION_CREDENTIALS'));
-    $json_a = json_decode($file, true);
-    $this->projectId = $json_a['project_id'];
-  }
 
   /**
    * Get List Intents
@@ -38,12 +28,14 @@ class IntentService
    */
   public function getIntents($request)
   {
-    // Sesion
-    $credentials = array('credentials' => '/home/modulosi/acms/Modules/Idialogflow/Credencials/test.json');
-    $project = 'newagent-cabde';
+    // Session Data
+    $bot = Bot::find($request->filter->project);
+    $credentialsData = json_decode($bot->credentials, true);
+    $credentials = array('credentials' => $credentialsData);
+
     // get intents List
     $intentsClient = new IntentsClient($credentials);
-    $parent = $intentsClient->projectAgentName($project);
+    $parent = $intentsClient->projectAgentName($credentialsData['project_id']);
     $intents = $intentsClient->listIntents($parent, [
       'intentView' => IntentView::INTENT_VIEW_FULL
     ]);
@@ -72,14 +64,18 @@ class IntentService
    * @param $intentId
    * @return Response
    */
-  public function getIntent($intentId)
+  public function getIntent($intentId, $request)
   {
-    $intent = 'projects/'.$this->projectId.'/agent/intents/'.$intentId;
-    $intentsClient = new IntentsClient();
+    // Session Data
+    $bot = Bot::find($request->filter->project);
+    $credentialsData = json_decode($bot->credentials, true);
+    $credentials = array('credentials' => $credentialsData);
+
+    $intentsClient = new IntentsClient($credentials);
+    $intent = 'projects/'.$credentialsData['project_id'].'/agent/intents/'.$intentId;
     $intent = $intentsClient->getIntent($intent, [
       'intentView' => IntentView::INTENT_VIEW_FULL
     ]);
-    //dd($intent);
     $response['name'] = $intent->getName();
     $response['displayName'] = $intent->getDisplayName();
     $response['WebhookState'] = $intent->getWebhookState();
@@ -115,13 +111,17 @@ class IntentService
    * @param $intentId
    * @return Response
    */
-  public function createIntent($data)
+  public function createIntent($data, $request)
   {
+    // Session Data
+    $bot = Bot::find($request->filter->project);
+    $credentialsData = json_decode($bot->credentials, true);
+    $credentials = array('credentials' => $credentialsData);
 
-    $intentsClient = new IntentsClient();
+    $intentsClient = new IntentsClient($credentials);
 
     // prepare parent
-    $parent = $intentsClient->projectAgentName($this->projectId);
+    $parent = $intentsClient->projectAgentName($credentialsData['project_id']);
 
     // prepare training phrases for intent
     if(isset($data['training_phrase_parts'])){
@@ -170,12 +170,17 @@ class IntentService
    * @param $languageCode
    * @return Response
    */
-  public function updateIntent($intentId, $data)
+  public function updateIntent($intentId, $data, $request)
   {
-    $intentsClient = new IntentsClient();
     try {
+      // Session Data
+      $bot = Bot::find($request->filter->project);
+      dd($bot);
+      $credentialsData = json_decode($bot->credentials, true);
+      $credentials = array('credentials' => $credentialsData);
 
-      $intent = 'projects/'.$this->projectId.'/agent/intents/'.$intentId;
+      $intentsClient = new IntentsClient($credentials);
+      $intent = 'projects/'.$credentialsData['project_id'].'/agent/intents/'.$intentId;
       $intent = $intentsClient->getIntent($intent, [
         'intentView' => IntentView::INTENT_VIEW_FULL
       ]);
@@ -225,10 +230,15 @@ class IntentService
    * @param $intentId
    * @return Response
    */
-  public function DeleteIntent($intentId)
+  public function DeleteIntent($intentId, $request)
   {
-    $parent = 'projects/'.$this->projectId.'/agent/intents/'.$intentId;
-    $intentsClient = new IntentsClient();
+    // Session Data
+    $bot = Bot::find($request->filter->project);
+    $credentialsData = json_decode($bot->credentials, true);
+    $credentials = array('credentials' => $credentialsData);
+
+    $parent = 'projects/'.$credentialsData['project_id'].'/agent/intents/'.$intentId;
+    $intentsClient = new IntentsClient($credentials);
     $intentData = $intentsClient->getIntent($parent);
     $intents = $intentsClient->deleteIntent($intentData->getName());
     $intentsClient->close();
