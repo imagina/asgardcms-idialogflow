@@ -37,10 +37,12 @@ $router->group(['prefix' => '/idialogflow'], function (Router $router) {
     $router->get('/', [
       'as' => 'api.idialogflow.bots.index',
       'uses' => 'BotController@index',
+      'middleware' => ['auth:api']
     ]);
     $router->get('/{bot}', [
       'as' => 'api.idialogflow.bots.show',
       'uses' => 'BotController@show',
+      'middleware' => ['auth:api']
     ]);
     $router->put('/{bot}', [
       'as' => 'api.idialogflow.bots.update',
