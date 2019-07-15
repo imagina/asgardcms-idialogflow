@@ -4,9 +4,11 @@ namespace Modules\Idialogflow\Providers;
 
 use Illuminate\Support\ServiceProvider;
 use Illuminate\Database\Eloquent\Factory;
+use Modules\Core\Traits\CanPublishConfiguration;
 
 class IdialogflowServiceProvider extends ServiceProvider
 {
+  use CanPublishConfiguration;
     /**
      * Indicates if loading of the provider is deferred.
      *
@@ -21,6 +23,9 @@ class IdialogflowServiceProvider extends ServiceProvider
      */
     public function boot()
     {
+        $this->publishConfig('idialogflow', 'permissions');
+        $this->publishConfig('idialogflow', 'config');
+
         $this->registerTranslations();
         $this->registerConfig();
         $this->registerViews();
