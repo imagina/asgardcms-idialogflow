@@ -31,7 +31,7 @@ $router->group(['prefix' => '/idialogflow'], function (Router $router) {
   $router->group(['prefix' => '/bots'], function (Router $router) {
     $router->post('/', [
       'as' => 'api.idialogflow.bots.store',
-      'uses' => 'BotController@store',
+      'uses' => 'BotController@create',
     ]);
     $router->get('/', [
       'as' => 'api.idialogflow.bots.index',
