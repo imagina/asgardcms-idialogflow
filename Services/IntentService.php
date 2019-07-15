@@ -15,6 +15,7 @@ use Google\Cloud\Dialogflow\V2\Intent_TrainingPhrase_Part;
 use Google\Cloud\Dialogflow\V2\Intent_TrainingPhrase;
 use Google\Cloud\Dialogflow\V2\Intent_Message_Text;
 use Google\Cloud\Dialogflow\V2\Intent_Message;
+use Google\Cloud\Dialogflow\V2\SessionsClient;
 
 class IntentService
 {
@@ -37,9 +38,12 @@ class IntentService
    */
   public function getIntents($request)
   {
+    // Sesion
+    $credentials = array('credentials' => '/home/modulosi/acms/Modules/Idialogflow/Credencials/test.json');
+    $project = 'newagent-cabde';
     // get intents List
-    $intentsClient = new IntentsClient();
-    $parent = $intentsClient->projectAgentName($this->projectId);
+    $intentsClient = new IntentsClient($credentials);
+    $parent = $intentsClient->projectAgentName($project);
     $intents = $intentsClient->listIntents($parent, [
       'intentView' => IntentView::INTENT_VIEW_FULL
     ]);
