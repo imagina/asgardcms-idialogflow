@@ -32,6 +32,7 @@ $router->group(['prefix' => '/idialogflow'], function (Router $router) {
     $router->post('/', [
       'as' => 'api.idialogflow.bots.store',
       'uses' => 'BotController@create',
+      'middleware' => ['auth:api']
     ]);
     $router->get('/', [
       'as' => 'api.idialogflow.bots.index',
@@ -44,10 +45,12 @@ $router->group(['prefix' => '/idialogflow'], function (Router $router) {
     $router->put('/{bot}', [
       'as' => 'api.idialogflow.bots.update',
       'uses' => 'BotController@update',
+      'middleware' => ['auth:api']
     ]);
     $router->delete('/{bot}', [
       'as' => 'api.idialogflow.bots.destroy',
       'uses' => 'BotController@delete',
+      'middleware' => ['auth:api']
     ]);
   });
 
