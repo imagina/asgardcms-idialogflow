@@ -42,7 +42,7 @@ class IntentController extends BaseApiController
   {
     try {
       $params = $this->getParamsRequest($request);
-      $data = $this->intentService->getIntent($intentId, $params);
+      $data = $this->intentService->k($intentId, $params);
       $response = ["data" => $data];
     } catch (\Exception $e) {
       $status = $this->getStatusError($e->getCode());
