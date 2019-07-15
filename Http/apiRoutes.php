@@ -47,7 +47,7 @@ $router->group(['prefix' => '/idialogflow'], function (Router $router) {
     ]);
     $router->delete('/{bot}', [
       'as' => 'api.idialogflow.bots.destroy',
-      'uses' => 'BotController@destroy',
+      'uses' => 'BotController@delete',
     ]);
   });
 

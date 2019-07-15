@@ -107,7 +107,8 @@ class BotController extends BaseApiController
       $params = $this->getParamsRequest($request);
       $data = $request->input('attributes');
       //Validate Request
-      $this->validateRequestApi(new BotTransformer($data));
+      $this->validateRequestApi(new CreateBotRequest($data));
+//      return $data;
       //Update data
       $category = $this->bot->updateBy($criteria, $data, $params);
       //Response
@@ -125,7 +126,7 @@ class BotController extends BaseApiController
    * Remove the specified resource from storage.
    * @return Response
    */
-  public function destroy()
+  public function delete($criteria, Request $request)
   {
     \DB::beginTransaction();
     try {
