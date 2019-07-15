@@ -38,10 +38,11 @@ class IntentController extends BaseApiController
   * Show the specified resource.
   * @return Response
   */
-  public function show($intentId)
+  public function show($intentId, Request $request)
   {
     try {
-      $data = $this->intentService->getIntent($intentId);
+      $params = $this->getParamsRequest($request);
+      $data = $this->intentService->getIntent($intentId, $params);
       $response = ["data" => $data];
     } catch (\Exception $e) {
       $status = $this->getStatusError($e->getCode());
@@ -59,7 +60,8 @@ class IntentController extends BaseApiController
   {
     try {
       $data = $request->input('attributes') ?? [];
-      $intent = $this->intentService->createIntent($data);
+      $params = $this->getParamsRequest($request);
+      $intent = $this->intentService->createIntent($data, $params);
       $response = ["data" => $intent];
     } catch (\Exception $e) {
       $status = $this->getStatusError($e->getCode());
@@ -77,7 +79,8 @@ class IntentController extends BaseApiController
   {
     try {
       $data = $request->input('attributes') ?? [];//Get data
-      $intent = $this->intentService->updateIntent($intentId, $data);
+      $params = $this->getParamsRequest($request);
+      $intent = $this->intentService->updateIntent($intentId, $data, $params);
       $response = ["data" => $intent];
     } catch (\Exception $e) {
       $status = $this->getStatusError($e->getCode());
@@ -90,10 +93,11 @@ class IntentController extends BaseApiController
    * Remove the specified resource from storage.
    * @return Response
    */
-  public function destroy($intentId)
+  public function destroy($intentId,  Request $request)
   {
     try {
-      $this->intentService->DeleteIntent($intentId);
+      $params = $this->getParamsRequest($request);
+      $this->intentService->DeleteIntent($intentId, $params);
       $response = ['data' => ''];
     } catch (\Exception $e) {
       $status = $this->getStatusError($e->getCode());
