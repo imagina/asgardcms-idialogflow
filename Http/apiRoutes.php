@@ -21,7 +21,7 @@ $router->group(['prefix' => '/idialogflow'], function (Router $router) {
       'as' => 'api.idialogflow.intents.update',
       'uses' => 'IntentController@update',
     ]);
-    $router->delete('/{intentId}', [
+    $router->delete('/{intentId}/{project}', [
       'as' => 'api.idialogflow.intents.destroy',
       'uses' => 'IntentController@destroy',
     ]);
@@ -37,7 +37,7 @@ $router->group(['prefix' => '/idialogflow'], function (Router $router) {
     $router->get('/', [
       'as' => 'api.idialogflow.bots.index',
       'uses' => 'BotController@index',
-      'middleware' => ['auth:api']
+
     ]);
     $router->get('/{bot}', [
       'as' => 'api.idialogflow.bots.show',

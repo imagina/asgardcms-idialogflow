@@ -111,10 +111,10 @@ class IntentService
    * @param $intentId
    * @return Response
    */
-  public function createIntent($data, $request)
+  public function createIntent($data)
   {
     // Session Data
-    $bot = Bot::find($request->filter->project);
+    $bot = Bot::find($data['project_id']);
     $credentialsData = json_decode($bot->credentials, true);
     $credentials = array('credentials' => $credentialsData);
 
@@ -170,12 +170,11 @@ class IntentService
    * @param $languageCode
    * @return Response
    */
-  public function updateIntent($intentId, $data, $request)
+  public function updateIntent($intentId, $data)
   {
     try {
       // Session Data
-      $bot = Bot::find($request->filter->project);
-      dd($bot);
+      $bot = Bot::find($data['project_id']);
       $credentialsData = json_decode($bot->credentials, true);
       $credentials = array('credentials' => $credentialsData);
 
@@ -230,10 +229,10 @@ class IntentService
    * @param $intentId
    * @return Response
    */
-  public function DeleteIntent($intentId, $request)
+  public function DeleteIntent($intentId, $project)
   {
     // Session Data
-    $bot = Bot::find($request->filter->project);
+    $bot = Bot::find($project);
     $credentialsData = json_decode($bot->credentials, true);
     $credentials = array('credentials' => $credentialsData);
 
