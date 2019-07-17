@@ -227,6 +227,7 @@ class IntentService
   /**
    * Delete an Intent
    * @param $intentId
+   * @param $project
    * @return Response
    */
   public function DeleteIntent($intentId, $project)
