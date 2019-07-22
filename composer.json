@@ -1,6 +1,9 @@
 {
     "name": "imagina/idialogflow-module",
     "description": "",
+    "require": {
+      "google/cloud-dialogflow": "^0.8.4"
+    },
     "authors": [
         {
             "name": "Imagina Colombia",
@@ -22,4 +25,4 @@
             "Modules\\Idialogflow\\": ""
         }
     }
-}
+},
