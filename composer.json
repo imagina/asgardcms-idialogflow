@@ -1,28 +1,45 @@
 {
-    "name": "imagina/idialogflow-module",
-    "description": "",
-    "require": {
-      "google/cloud-dialogflow": "^0.8.4"
-    },
-    "authors": [
-        {
-            "name": "Imagina Colombia",
-            "email": "soporte@imaginacolombia.com"
-        }
-    ],
-    "extra": {
-        "laravel": {
-            "providers": [
-                "Modules\\Idialogflow\\Providers\\IdialogflowServiceProvider"
-            ],
-            "aliases": {
-
-            }
-        }
-    },
-    "autoload": {
-        "psr-4": {
-            "Modules\\Idialogflow\\": ""
-        }
+  "name": "imagina/idialogflow-module",
+  "description": "",
+  "type": "asgard-module",
+  "license": "MIT",
+  "require": {
+    "php": ">=7.0.0",
+    "composer/installers": "~1.0",
+    "idavoll/core-module": "~3.0",
+    "google/cloud-dialogflow": "^0.8.4"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "~6.0",
+    "orchestra/testbench": "3.5.*"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Modules\\Idialogflow\\": ".",
+      "Modules\\": "Modules/"
     }
+  },
+  "minimum-stability": "stable",
+  "prefer-stable": true,
+  "authors": [
+    {
+      "name": "Imagina Colombia",
+      "email": "soporte@imaginacolombia.com"
+    }
+  ],
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Modules\\Idialogflow\\Providers\\IdialogflowServiceProvider"
+      ],
+      "aliases": {
+
+      }
+    }
+  },
+  "autoload": {
+    "psr-4": {
+      "Modules\\Idialogflow\\": ""
+    }
+  }
 }

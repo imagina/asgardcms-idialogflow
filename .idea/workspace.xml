@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="" />
+    <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="  - Update Composer">
+      <change beforePath="$PROJECT_DIR$/.idea/Idialogflow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Idialogflow.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,7 +19,17 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/composer.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="48">
+              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -181,6 +195,9 @@
       <workItem from="1563405527036" duration="136000" />
       <workItem from="1563465324102" duration="612000" />
       <workItem from="1563830516575" duration="283000" />
+      <workItem from="1563832024389" duration="1114000" />
+      <workItem from="1563889231319" duration="615000" />
+      <workItem from="1563898531470" duration="577000" />
     </task>
     <task id="LOCAL-00001" summary=" + Edit README.md">
       <created>1562259576024</created>
@@ -441,16 +458,24 @@
       <option name="project" value="LOCAL" />
       <updated>1563830678999</updated>
     </task>
-    <option name="localTasksCounter" value="38" />
+    <task id="LOCAL-00038" summary="  - Update Composer">
+      <created>1563832183358</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1563832183358</updated>
+    </task>
+    <option name="localTasksCounter" value="39" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126791000" />
+    <option name="totallyTimeSpent" value="129097000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-321" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15031983" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15511727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -469,7 +494,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.19083156" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.18923241" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -477,7 +502,6 @@
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" + Edit Intent Service" />
     <MESSAGE value=" + Add routes put and delete" />
     <MESSAGE value=" + Add implement for store Intent" />
     <MESSAGE value=" + Update IntentController, add update and delete methods" />
@@ -502,7 +526,8 @@
     <MESSAGE value="  - Update Intent Controller" />
     <MESSAGE value="  - Update Intent Service" />
     <MESSAGE value="  - add package &quot;google/cloud-dialogflow&quot;: &quot;^0.8.4&quot;, to composer.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="  - add package &quot;google/cloud-dialogflow&quot;: &quot;^0.8.4&quot;, to composer.json" />
+    <MESSAGE value="  - Update Composer" />
+    <option name="LAST_COMMIT_MESSAGE" value="  - Update Composer" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Http/backendRoutes.php">
@@ -531,13 +556,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="7" column="6" selection-start-line="7" selection-start-column="6" selection-end-line="7" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/module.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
         </state>
       </provider>
     </entry>
@@ -686,13 +704,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="41" lean-forward="true" selection-start-line="1" selection-start-column="41" selection-end-line="1" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -700,6 +711,20 @@
             <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="40" />
           </first_editor>
           <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
         </state>
       </provider>
     </entry>
