@@ -3,10 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Entities/Bot.php" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Bot.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Transformers/BotTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Transformers/BotTransformer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Http/apiRoutes.php" beforeDir="false" afterPath="$PROJECT_DIR$/Http/apiRoutes.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,7 +18,45 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Services/MessageService.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1296">
+              <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+              <folding>
+                <element signature="e#48#85#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Http/apiRoutes.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+              <folding>
+                <element signature="e#168#852#1#PHP" />
+                <element signature="e#906#1676#1#PHP" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/MessageController.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1128">
+              <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+              <folding>
+                <element signature="e#60#88#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -66,8 +101,10 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Http/Controllers/Api/BotController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Services/MessageService.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Transformers/BotTransformer.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Http/Controllers/Api/MessageController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Repositories/Eloquent/EloquentBotRepository.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Config/permissions.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Http/apiRoutes.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_HIGHLIGHTING" />
@@ -95,13 +132,16 @@
         <option value="$PROJECT_DIR$/Http/Controllers/Api/BotController.php" />
         <option value="$PROJECT_DIR$/Config/permissions.php" />
         <option value="$PROJECT_DIR$/Credencials/credencials.json" />
-        <option value="$PROJECT_DIR$/Http/apiRoutes.php" />
         <option value="$PROJECT_DIR$/Http/Controllers/Api/IntentController.php" />
         <option value="$PROJECT_DIR$/Services/IntentService.php" />
         <option value="$PROJECT_DIR$/composer.json" />
         <option value="$PROJECT_DIR$/Transformers/BotTransformer.php" />
         <option value="$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" />
         <option value="$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php" />
+        <option value="&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/Modules/Idialogflow/Http/Controllers/Api/MessageController.php" />
+        <option value="$PROJECT_DIR$/Services/MessageService.php" />
+        <option value="$PROJECT_DIR$/Http/Controllers/Api/MessageController.php" />
+        <option value="$PROJECT_DIR$/Http/apiRoutes.php" />
       </list>
     </option>
   </component>
@@ -128,11 +168,6 @@
             <path>
               <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Entities" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
               <item name="Http" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -147,33 +182,6 @@
               <item name="Http" type="462c0819:PsiDirectoryNode" />
               <item name="Controllers" type="462c0819:PsiDirectoryNode" />
               <item name="Api" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Providers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="Cache" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
-              <item name="Eloquent" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
-              <item name="Transformers" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -242,7 +250,7 @@
       <workItem from="1563889231319" duration="615000" />
       <workItem from="1563898531470" duration="5380000" />
       <workItem from="1563921371474" duration="1780000" />
-      <workItem from="1563975754633" duration="1637000" />
+      <workItem from="1563975754633" duration="18912000" />
     </task>
     <task id="LOCAL-00001" summary=" + Edit README.md">
       <created>1562259576024</created>
@@ -517,16 +525,66 @@
       <option name="project" value="LOCAL" />
       <updated>1563899141125</updated>
     </task>
-    <option name="localTasksCounter" value="40" />
+    <task id="LOCAL-00040" summary="  - Add fields in migrations">
+      <created>1563981373561</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1563981373561</updated>
+    </task>
+    <task id="LOCAL-00041" summary="  - Add new fields in fillable Entity">
+      <created>1563981402683</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1563981402683</updated>
+    </task>
+    <task id="LOCAL-00042" summary="  - Update Transformer">
+      <created>1563981431919</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1563981431919</updated>
+    </task>
+    <task id="LOCAL-00043" summary="  - Add request for create and update Bots">
+      <created>1563981458403</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1563981458403</updated>
+    </task>
+    <task id="LOCAL-00044" summary="  - Update bind in service provider">
+      <created>1563981483743</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1563981483743</updated>
+    </task>
+    <task id="LOCAL-00045" summary="  - Add messageController">
+      <created>1564006700106</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1564006700106</updated>
+    </task>
+    <task id="LOCAL-00046" summary="  - Add message service for send whatsapps">
+      <created>1564006741018</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1564006741018</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="137317000" />
+    <option name="totallyTimeSpent" value="154592000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-321" width="1936" height="1056" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15831557" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15831557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -545,7 +603,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.1881663" />
+      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.1881663" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -593,13 +651,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" + Add implement for store Intent" />
-    <MESSAGE value=" + Update IntentController, add update and delete methods" />
-    <MESSAGE value=" + Adding Fields for create Intent" />
-    <MESSAGE value=" + Update Method delete in IntentService.php" />
-    <MESSAGE value=" + Add INTENT_VIEW_FULL in services Intents" />
-    <MESSAGE value=" + update IntentService [create, update] methods" />
-    <MESSAGE value=" + update IntentService" />
     <MESSAGE value=" + update composer.json and module.json" />
     <MESSAGE value=" + Add routes Api for bot resource" />
     <MESSAGE value=" + Add entity Bot, add Migration Bots" />
@@ -618,20 +669,20 @@
     <MESSAGE value="  - add package &quot;google/cloud-dialogflow&quot;: &quot;^0.8.4&quot;, to composer.json" />
     <MESSAGE value="  - Update Composer" />
     <MESSAGE value="  - Update Composer.json" />
-    <option name="LAST_COMMIT_MESSAGE" value="  - Update Composer.json" />
+    <MESSAGE value="  - Add fields in migrations" />
+    <MESSAGE value="  - Add new fields in fillable Entity" />
+    <MESSAGE value="  - Update Transformer" />
+    <MESSAGE value="  - Add request for create and update Bots" />
+    <MESSAGE value="  - Update bind in service provider" />
+    <MESSAGE value="  - Add messageController" />
+    <MESSAGE value="  - Add message service for send whatsapps" />
+    <option name="LAST_COMMIT_MESSAGE" value="  - Add message service for send whatsapps" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Http/backendRoutes.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Http/routes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="6" />
         </state>
       </provider>
     </entry>
@@ -688,33 +739,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="365">
-          <caret line="96" column="60" selection-start-line="96" selection-start-column="60" selection-end-line="96" selection-end-column="60" />
-          <folding>
-            <element signature="e#60#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Http/apiRoutes.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="341">
-          <caret line="23" column="41" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1267">
-          <caret line="229" column="20" selection-start-line="229" selection-start-column="20" selection-end-line="229" selection-end-column="20" />
-          <folding>
-            <element signature="e#67#112#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/README.md">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -732,34 +756,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/module.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="3" column="31" selection-start-line="3" selection-start-column="31" selection-end-line="3" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/composer.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Http/Requests/CreateBotRequest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
           <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/BotController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="43" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="43" />
-          <folding>
-            <element signature="e#60#88#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -811,22 +811,101 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Entities/Bot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="17" />
-          <caret line="15" column="22" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="22" />
-          <caret line="16" column="23" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="23" />
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2084">
           <caret line="120" column="53" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="53" />
           <folding>
             <element signature="e#49#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/module.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" column="1" lean-forward="true" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/BotController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1416">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="e#60#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/composer.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="624">
+          <caret line="26" column="44" lean-forward="true" selection-start-line="26" selection-start-column="44" selection-end-line="26" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/routes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Entities/Bot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/IntentService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="69" column="46" lean-forward="true" selection-start-line="69" selection-start-column="29" selection-end-line="69" selection-end-column="46" />
+          <folding>
+            <element signature="e#67#112#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="312">
+          <caret line="53" selection-start-line="53" selection-end-line="69" selection-end-column="3" />
+          <folding>
+            <element signature="e#60#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/MessageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1128">
+          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+          <folding>
+            <element signature="e#60#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Services/MessageService.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1296">
+          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+          <folding>
+            <element signature="e#48#85#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/apiRoutes.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+          <folding>
+            <element signature="e#168#852#1#PHP" />
+            <element signature="e#906#1676#1#PHP" />
           </folding>
         </state>
       </provider>
