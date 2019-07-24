@@ -11,7 +11,11 @@ class Bot extends Model
   protected $fillable = [
     'user_id',
     'project_id',
-    'credentials'
+    'credentials',
+    'init_message',
+    'twilio_auth_token',
+    'twilio_account_sid',
+    'twilio_sender',
   ];
 
   public function user()
