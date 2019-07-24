@@ -124,7 +124,7 @@ class IdialogflowServiceProvider extends ServiceProvider
         if (!config('app.cache')) {
           return $repository;
         }
-        return new \Modules\Idialogflow\Repositories\Cache\CacheCartDecorator($repository);
+        return new \Modules\Idialogflow\Repositories\Cache\CacheBotDecorator($repository);
       }
     );
   }
