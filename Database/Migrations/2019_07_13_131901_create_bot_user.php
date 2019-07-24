@@ -19,6 +19,10 @@ class CreateBotUser extends Migration
             $table->integer('user_id')->unsigned()->nullable();
             $table->foreign('user_id')->references('id')->on(config('auth.table', 'users'))->onDelete('restrict');
             $table->string('project_id');
+            $table->text('init_message');
+            $table->string('twilio_auth_token');
+            $table->string('twilio_account_sid');
+            $table->string('twilio_sender');
             $table->text('credentials');
             $table->timestamps();
         });

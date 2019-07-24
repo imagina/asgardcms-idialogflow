@@ -1,10 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="  - Update Composer">
-      <change beforePath="$PROJECT_DIR$/.idea/Idialogflow.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/Idialogflow.iml" afterDir="false" />
+    <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" beforeDir="false" afterPath="$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Entities/Bot.php" beforeDir="false" afterPath="$PROJECT_DIR$/Entities/Bot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php" beforeDir="false" afterPath="$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Transformers/BotTransformer.php" beforeDir="false" afterPath="$PROJECT_DIR$/Transformers/BotTransformer.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,17 +21,7 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/composer.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="48">
-              <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -74,6 +66,7 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Http/Controllers/Api/IntentController.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Http/Controllers/Api/BotController.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
+    <setting file="file://$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Transformers/BotTransformer.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Repositories/Eloquent/EloquentBotRepository.php" root0="FORCE_HIGHLIGHTING" root1="SKIP_INSPECTION" />
     <setting file="file://$PROJECT_DIR$/Config/permissions.php" root0="SKIP_INSPECTION" root1="SKIP_INSPECTION" />
@@ -94,7 +87,6 @@
         <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/module.json" />
         <option value="&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/.env" />
-        <option value="$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" />
         <option value="$PROJECT_DIR$/Entities/Bot.php" />
         <option value="$PROJECT_DIR$/Repositories/BotRepository.php" />
         <option value="$PROJECT_DIR$/Repositories/Cache/CacheBotDecorator.php" />
@@ -102,13 +94,14 @@
         <option value="&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/Modules/Idialogflow/Transformers/BotTransformer.php" />
         <option value="$PROJECT_DIR$/Http/Controllers/Api/BotController.php" />
         <option value="$PROJECT_DIR$/Config/permissions.php" />
-        <option value="$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php" />
-        <option value="$PROJECT_DIR$/Transformers/BotTransformer.php" />
         <option value="$PROJECT_DIR$/Credencials/credencials.json" />
         <option value="$PROJECT_DIR$/Http/apiRoutes.php" />
         <option value="$PROJECT_DIR$/Http/Controllers/Api/IntentController.php" />
         <option value="$PROJECT_DIR$/Services/IntentService.php" />
         <option value="$PROJECT_DIR$/composer.json" />
+        <option value="$PROJECT_DIR$/Transformers/BotTransformer.php" />
+        <option value="$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" />
+        <option value="$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php" />
       </list>
     </option>
   </component>
@@ -124,6 +117,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -131,11 +125,60 @@
               <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Entities" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Http" type="462c0819:PsiDirectoryNode" />
+              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
+              <item name="Api" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Providers" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="Cache" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Repositories" type="462c0819:PsiDirectoryNode" />
+              <item name="Eloquent" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Transformers" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -197,7 +240,9 @@
       <workItem from="1563830516575" duration="283000" />
       <workItem from="1563832024389" duration="1114000" />
       <workItem from="1563889231319" duration="615000" />
-      <workItem from="1563898531470" duration="577000" />
+      <workItem from="1563898531470" duration="5380000" />
+      <workItem from="1563921371474" duration="1780000" />
+      <workItem from="1563975754633" duration="1637000" />
     </task>
     <task id="LOCAL-00001" summary=" + Edit README.md">
       <created>1562259576024</created>
@@ -465,17 +510,23 @@
       <option name="project" value="LOCAL" />
       <updated>1563832183358</updated>
     </task>
-    <option name="localTasksCounter" value="39" />
+    <task id="LOCAL-00039" summary="  - Update Composer.json">
+      <created>1563899141125</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1563899141125</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="129097000" />
+    <option name="totallyTimeSpent" value="137317000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-321" width="1936" height="1056" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15511727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15831557" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -486,23 +537,62 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32998884" />
-      <window_info anchor="bottom" id="File Transfer" order="9" visible="true" weight="0.23076923" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.33110368" />
+      <window_info anchor="bottom" id="File Transfer" order="9" weight="0.23076923" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Terminal" order="11" />
       <window_info anchor="bottom" id="Event Log" order="12" side_tool="true" weight="0.32998884" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.18923241" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.1881663" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="RECENT_FILTERS">
+      <map>
+        <entry key="Branch">
+          <value>
+            <list />
+          </value>
+        </entry>
+        <entry key="User">
+          <value>
+            <list />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" + Add routes put and delete" />
     <MESSAGE value=" + Add implement for store Intent" />
     <MESSAGE value=" + Update IntentController, add update and delete methods" />
     <MESSAGE value=" + Adding Fields for create Intent" />
@@ -527,7 +617,8 @@
     <MESSAGE value="  - Update Intent Service" />
     <MESSAGE value="  - add package &quot;google/cloud-dialogflow&quot;: &quot;^0.8.4&quot;, to composer.json" />
     <MESSAGE value="  - Update Composer" />
-    <option name="LAST_COMMIT_MESSAGE" value="  - Update Composer" />
+    <MESSAGE value="  - Update Composer.json" />
+    <option name="LAST_COMMIT_MESSAGE" value="  - Update Composer.json" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Http/backendRoutes.php">
@@ -559,23 +650,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="41" selection-start-line="15" selection-start-column="24" selection-end-line="15" selection-end-column="41" />
-          <folding>
-            <element signature="e#7#45#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Http/Controllers/IntentController.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="144">
@@ -587,13 +661,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="48">
           <caret line="2" selection-start-line="2" selection-end-line="2" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Repositories/BotRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="10" selection-end-line="6" selection-end-column="23" />
         </state>
       </provider>
     </entry>
@@ -614,47 +681,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Config/config.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="file://$PROJECT_DIR$/Config/permissions.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
           <caret line="4" column="33" lean-forward="true" selection-start-line="4" selection-start-column="33" selection-end-line="4" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="600">
-          <caret line="25" column="59" selection-start-line="25" selection-start-column="59" selection-end-line="25" selection-end-column="59" />
-          <folding>
-            <element signature="e#49#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Credencials/credencials.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="11" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Transformers/BotTransformer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="15" column="18" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/BotController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="59" column="26" lean-forward="true" selection-start-line="59" selection-start-column="26" selection-end-line="59" selection-end-column="26" />
-          <folding>
-            <element signature="e#60#88#0#PHP" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -672,25 +702,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="341">
           <caret line="23" column="41" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Entities/Bot.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="18" column="47" selection-start-line="18" selection-start-column="41" selection-end-line="18" selection-end-column="47" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Repositories/Eloquent/EloquentBotRepository.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="355">
-          <caret line="104" column="45" selection-start-line="104" selection-start-column="38" selection-end-line="104" selection-end-column="45" />
-          <folding>
-            <element signature="e#61#112#0#PHP" expanded="true" />
-            <element signature="e#1926#2913#0#PHP" />
-            <element signature="e#2917#3019#0#PHP" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -714,6 +725,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Credencials/credencials.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/module.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -723,8 +741,93 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/composer.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="26" column="43" selection-start-line="26" selection-start-column="43" selection-end-line="26" selection-end-column="43" />
+        <state relative-caret-position="360">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/Requests/CreateBotRequest.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="6" selection-start-line="6" selection-start-column="6" selection-end-line="6" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/BotController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="43" selection-start-line="18" selection-start-column="30" selection-end-line="18" selection-end-column="43" />
+          <folding>
+            <element signature="e#60#88#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repositories/BotRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Repositories/Eloquent/EloquentBotRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="58" selection-start-line="8" selection-start-column="36" selection-end-line="8" selection-end-column="58" />
+          <folding>
+            <element signature="e#61#112#0#PHP" expanded="true" />
+            <element signature="e#266#1922#0#PHP" />
+            <element signature="e#1926#2913#0#PHP" />
+            <element signature="e#3023#3485#0#PHP" />
+            <element signature="e#3489#3914#0#PHP" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Config/config.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="11" selection-start-line="1" selection-start-column="11" selection-end-line="1" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="21" column="38" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="38" />
+          <folding>
+            <element signature="e#7#45#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Transformers/BotTransformer.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="13" lean-forward="true" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Entities/Bot.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="5" selection-end-line="14" selection-end-column="17" />
+          <caret line="15" column="22" selection-start-line="15" selection-start-column="5" selection-end-line="15" selection-end-column="22" />
+          <caret line="16" column="23" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="23" />
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="5" selection-end-line="17" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2084">
+          <caret line="120" column="53" selection-start-line="120" selection-start-column="40" selection-end-line="120" selection-end-column="53" />
+          <folding>
+            <element signature="e#49#88#0#PHP" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
