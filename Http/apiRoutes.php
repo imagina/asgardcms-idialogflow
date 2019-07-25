@@ -5,69 +5,18 @@ use Illuminate\Routing\Router;
 $router->group(['prefix' => '/idialogflow'], function (Router $router) {
 
   // Intents
-  $router->group(['prefix' => '/intents'], function (Router $router) {
-    $router->post('/', [
-      'as' => 'api.idialogflow.intents.store',
-      'uses' => 'IntentController@store',
-    ]);
-    $router->get('/', [
-      'as' => 'api.idialogflow.intents.index',
-      'uses' => 'IntentController@index',
-    ]);
-    $router->get('/{intentId}', [
-      'as' => 'api.idialogflow.intents.show',
-      'uses' => 'IntentController@show',
-    ]);
-    $router->put('/{intentId}', [
-      'as' => 'api.idialogflow.intents.update',
-      'uses' => 'IntentController@update',
-    ]);
-    $router->delete('/{intentId}/{project}', [
-      'as' => 'api.idialogflow.intents.destroy',
-      'uses' => 'IntentController@destroy',
-    ]);
-  });
+  require('ApiRoutes/intentRoutes.php');
 
   // Bots
-  $router->group(['prefix' => '/bots'], function (Router $router) {
-    $router->post('/', [
-      'as' => 'api.idialogflow.bots.store',
-      'uses' => 'BotController@create',
-      'middleware' => ['auth:api']
-    ]);
-    $router->get('/', [
-      'as' => 'api.idialogflow.bots.index',
-      'uses' => 'BotController@index',
+  require('ApiRoutes/botRoutes.php');
 
-    ]);
-    $router->get('/{bot}', [
-      'as' => 'api.idialogflow.bots.show',
-      'uses' => 'BotController@show',
-      'middleware' => ['auth:api']
-    ]);
-    $router->put('/{bot}', [
-      'as' => 'api.idialogflow.bots.update',
-      'uses' => 'BotController@update',
-      'middleware' => ['auth:api']
-    ]);
-    $router->delete('/{bot}', [
-      'as' => 'api.idialogflow.bots.destroy',
-      'uses' => 'BotController@delete',
-      'middleware' => ['auth:api']
-    ]);
-  });
+  // Contacts
+  require('ApiRoutes/contactRoutes.php');
+
+  // Bot Contacts
+  require('ApiRoutes/botContactRoutes.php');
 
   // Messages
-  $router->group(['prefix' => '/messages'], function (Router $router) {
-    //$router->post('/', [
-     // 'as' => 'api.idialogflow.messages.store',
-     // 'uses' => 'MessageController@store',
-      //'middleware' => ['auth:api']
-    //]);
-    $router->get('/', [
-      'as' => 'api.idialogflow.messages.index',
-      'uses' => 'MessageController@index',
-    ]);
-  });
+  require('ApiRoutes/messageRoutes.php');
 
 });
