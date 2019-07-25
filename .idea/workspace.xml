@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="">
+    <list default="true" id="42456156-839e-45b8-a15b-493807775412" name="Default Changelist" comment="  - Add routes for get messages">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Http/apiRoutes.php" beforeDir="false" afterPath="$PROJECT_DIR$/Http/apiRoutes.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Services/MessageService.php" beforeDir="false" afterPath="$PROJECT_DIR$/Services/MessageService.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -18,12 +18,12 @@
     </execution>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Services/MessageService.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1296">
-              <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+            <state relative-caret-position="528">
+              <caret line="64" column="24" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="24" />
               <folding>
                 <element signature="e#48#85#0#PHP" expanded="true" />
               </folding>
@@ -31,15 +31,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Http/apiRoutes.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="192">
-              <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
-              <folding>
-                <element signature="e#168#852#1#PHP" />
-                <element signature="e#906#1676#1#PHP" />
-              </folding>
+            <state relative-caret-position="696">
+              <caret line="29" selection-start-line="29" selection-end-line="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Credencials/credencials.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <caret selection-end-line="11" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -47,8 +52,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/MessageController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1128">
-              <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
+            <state relative-caret-position="1032">
+              <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
               <folding>
                 <element signature="e#60#88#0#PHP" expanded="true" />
               </folding>
@@ -139,9 +144,9 @@
         <option value="$PROJECT_DIR$/Database/Migrations/2019_07_13_131901_create_bot_user.php" />
         <option value="$PROJECT_DIR$/Providers/IdialogflowServiceProvider.php" />
         <option value="&lt;0cc085d1-c121-401d-b2de-af3bce649eda&gt;/acms/Modules/Idialogflow/Http/Controllers/Api/MessageController.php" />
-        <option value="$PROJECT_DIR$/Services/MessageService.php" />
         <option value="$PROJECT_DIR$/Http/Controllers/Api/MessageController.php" />
         <option value="$PROJECT_DIR$/Http/apiRoutes.php" />
+        <option value="$PROJECT_DIR$/Services/MessageService.php" />
       </list>
     </option>
   </component>
@@ -164,6 +169,11 @@
             <path>
               <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
               <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Idialogflow" type="462c0819:PsiDirectoryNode" />
+              <item name="Credencials" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="Idialogflow" type="b2602c69:ProjectViewProjectNode" />
@@ -250,7 +260,8 @@
       <workItem from="1563889231319" duration="615000" />
       <workItem from="1563898531470" duration="5380000" />
       <workItem from="1563921371474" duration="1780000" />
-      <workItem from="1563975754633" duration="18912000" />
+      <workItem from="1563975754633" duration="21065000" />
+      <workItem from="1564062156363" duration="668000" />
     </task>
     <task id="LOCAL-00001" summary=" + Edit README.md">
       <created>1562259576024</created>
@@ -574,17 +585,24 @@
       <option name="project" value="LOCAL" />
       <updated>1564006741018</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="  - Add routes for get messages">
+      <created>1564006761346</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1564006761346</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="154592000" />
+    <option name="totallyTimeSpent" value="157413000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1928" y="-321" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.15831557" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15991472" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -603,7 +621,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info active="true" anchor="right" id="Remote Host" order="3" visible="true" weight="0.1881663" />
+      <window_info anchor="right" id="Remote Host" order="3" visible="true" weight="0.18763326" />
       <window_info anchor="right" id="Database" order="4" />
     </layout>
   </component>
@@ -651,7 +669,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value=" + update composer.json and module.json" />
     <MESSAGE value=" + Add routes Api for bot resource" />
     <MESSAGE value=" + Add entity Bot, add Migration Bots" />
     <MESSAGE value=" + Add repository for bot resource" />
@@ -676,7 +693,8 @@
     <MESSAGE value="  - Update bind in service provider" />
     <MESSAGE value="  - Add messageController" />
     <MESSAGE value="  - Add message service for send whatsapps" />
-    <option name="LAST_COMMIT_MESSAGE" value="  - Add message service for send whatsapps" />
+    <MESSAGE value="  - Add routes for get messages" />
+    <option name="LAST_COMMIT_MESSAGE" value="  - Add routes for get messages" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/Http/backendRoutes.php">
@@ -746,13 +764,6 @@
             <caret line="4" selection-start-line="4" selection-end-line="4" selection-end-column="40" />
           </first_editor>
           <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Credencials/credencials.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>
@@ -879,20 +890,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/MessageController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1128">
-          <caret line="47" column="33" lean-forward="true" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
-          <folding>
-            <element signature="e#60#88#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Services/MessageService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1296">
-          <caret line="54" column="2" selection-start-line="54" selection-start-column="2" selection-end-line="54" selection-end-column="2" />
+        <state relative-caret-position="528">
+          <caret line="64" column="24" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="24" />
           <folding>
             <element signature="e#48#85#0#PHP" expanded="true" />
           </folding>
@@ -901,11 +902,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Http/apiRoutes.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        <state relative-caret-position="696">
+          <caret line="29" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Credencials/credencials.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret selection-end-line="11" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Http/Controllers/Api/MessageController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="47" column="33" selection-start-line="47" selection-start-column="33" selection-end-line="47" selection-end-column="33" />
           <folding>
-            <element signature="e#168#852#1#PHP" />
-            <element signature="e#906#1676#1#PHP" />
+            <element signature="e#60#88#0#PHP" expanded="true" />
           </folding>
         </state>
       </provider>

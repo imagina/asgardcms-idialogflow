@@ -52,7 +52,7 @@ class MessageService
 
     return $response->values()->all();
   }
-  
+
   private function formatedMessageData ($messages, $sender) {
     $response = [];
     foreach ($messages as $record) {
@@ -64,7 +64,7 @@ class MessageService
       $responseTmp['to'] = $record->to;
       $responseTmp['body'] = $record->body;
       $responseTmp['date_sent'] = $record->dateSent;
-      $responseTmp['date'] = $record->dateSent->format('d/m/Y H:i:s');
+      $responseTmp['date'] = $record->dateSent->format('Y/m/d H:i:s');
       $response[] = $responseTmp;
     }
     return collect($response);
